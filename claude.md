@@ -318,3 +318,449 @@ Dado tu perfil:
 **Última revisión**: [Hoy]  
 **Basado en**: ARS v3.7.3 + Lishix520 Academic Paper Skills  
 **Disciplina**: Health Economics (no ML-sesgado)
+
+---
+
+# 📋 FRAMEWORKS DE SKILLS INTEGRADAS
+
+Las siguientes secciones integran frameworks de 3 skills especializadas para análisis, escritura y revisión académica.
+
+---
+
+## 🔍 SKILL 1: Academic Researcher Framework
+
+### Cuándo Activar
+- Análisis estructurado de papers académicos
+- Revisión de literatura sistemática
+- Extracción de metodología y findings
+- Formateo de citas en múltiples estilos
+
+### Paper Analysis Framework
+
+Cuando analices un paper académico, estructura tu análisis en estos componentes:
+
+#### 1. Research Question & Objectives
+- Pregunta principal de investigación
+- Objetivos específicos (primarios y secundarios)
+- Hipótesis (si aplica)
+
+#### 2. Methodology
+- **Study Design**: Tipo de estudio (CEA, CUA, observacional, RCT, etc.)
+- **Population**: Criterios de inclusión/exclusión, tamaño de muestra
+- **Setting**: Contexto geográfico, sistema de salud
+- **Perspective**: Económica (sistema, sociedad, paciente)
+- **Time Horizon**: Corto plazo, largo plazo, lifetime
+- **Data Sources**: 
+  - Clinical effectiveness (RCTs, meta-análisis)
+  - Costs (tariffs, micro-costing)
+  - Utilities (EQ-5D, SF-6D)
+- **Analysis**: Modelos utilizados, supuestos clave
+
+#### 3. Key Findings
+- **Main Results**: Hallazgos principales con magnitudes de efecto
+- **ICER**: Ratio incremental (si aplica)
+- **Sensitivity Analysis**: Robustez de resultados
+- **Subgroup Analysis**: Heterogeneidad de efectos
+
+#### 4. Implications
+- **For Policy**: ¿Qué significa para tomadores de decisión?
+- **For Practice**: ¿Cómo cambia la práctica clínica?
+- **For Research**: ¿Qué preguntas quedan abiertas?
+
+#### 5. Limitations
+- **Internal Validity**: Sesgos, confounders
+- **External Validity**: Generalizabilidad
+- **Data Quality**: Limitaciones de fuentes
+- **Model Assumptions**: Supuestos críticos
+
+#### 6. Citation Formatting
+
+**APA 7th Edition** (Default):
+```
+Author, A. A., Author, B. B., & Author, C. C. (Year). Title of article. 
+Journal Name, Volume(Issue), page-page. https://doi.org/xxxxx
+```
+
+**MLA 9th Edition**:
+```
+Author, First. "Title of Article." Journal Name, vol. X, no. Y, Year, pp. XX-YY.
+```
+
+**Chicago 17th Edition**:
+```
+Author, First. "Title of Article." Journal Name Volume, no. Issue (Year): page-page.
+```
+
+### Literature Review Structure Template
+
+Para crear una revisión de literatura:
+
+#### I. INTRODUCTION
+- Context and significance of the topic
+- Scope of the review (inclusion/exclusion criteria)
+- Research question or objective
+
+#### II. THEORETICAL FRAMEWORKS
+- **Economic Evaluation Models**: CE, CU, CBA, Budget Impact
+- **Key Concepts**: ICER, QALY, DALY, WTP threshold
+- **Relevant Theories**: Health production function, human capital approach
+
+#### III. THEMATIC SYNTHESIS
+Organiza por temas (no cronológicamente):
+
+**Theme 1**: Cost-Effectiveness in High-Income Countries
+- Summary of findings
+- Common methodologies
+- Typical ICERs reported
+
+**Theme 2**: Cost-Effectiveness in LMICs
+- Summary of findings
+- Transferability issues
+- Data availability challenges
+
+**Theme 3**: Implementation Barriers
+- Supply chain issues
+- Training requirements
+- Health system capacity
+
+#### IV. RESEARCH GAPS
+- **Geographic gaps**: Estudios faltantes en regiones específicas
+- **Methodological gaps**: Métodos no aplicados
+- **Population gaps**: Subgrupos no estudiados
+- **Outcome gaps**: Desenlaces no medidos
+
+#### V. CONCLUSIONS
+- Synthesis of main findings
+- Implications for future research
+- Recommendations
+
+---
+
+## ✍️ SKILL 2: Research Paper Writer Framework
+
+### Cuándo Activar
+- Creación de outlines detallados
+- Drafting de secciones académicas
+- Formateo IEEE/ACM (adaptado a Health Economics)
+- Escritura técnica precisa
+
+### Workflow de Escritura
+
+#### Fase 1: Clarificación (Pre-Writing)
+Antes de escribir, confirma:
+1. **Topic & Scope**: ¿Cuál es el tema exacto y su alcance?
+2. **Target Audience**: ¿Journal específico? ¿Conference?
+3. **Length**: ¿Palabras o páginas objetivo?
+4. **Required Sections**: ¿IMRAD estándar o variaciones?
+5. **Formatting Standard**: APA 7, IEEE, ACM (para health econ: APA 7 + CHEERS)
+
+#### Fase 2: Outline Creation
+Crea un outline detallado ANTES de escribir:
+
+```markdown
+**TITLE**: [Specific, informative, <15 words]
+
+**ABSTRACT** (250 words)
+- Background (50 words)
+- Methods (70 words)
+- Results (80 words)
+- Conclusions (50 words)
+
+**1. INTRODUCTION** (800 words)
+   1.1 Problem Statement
+   1.2 Existing Solutions/Literature
+   1.3 Knowledge Gap
+   1.4 Study Objectives
+
+**2. METHODS** (1500 words)
+   2.1 Study Design
+   2.2 Population & Setting
+   2.3 [Economic-specific sections]
+   
+[etc.]
+```
+
+#### Fase 3: Iterative Drafting
+Escribe **sección por sección**, NO todo de una vez:
+
+**Orden recomendado**:
+1. Methods (más fácil, estructura clara)
+2. Results (basado en datos)
+3. Introduction (ahora sabes el contexto completo)
+4. Discussion (interpreta results)
+5. Conclusions (sintetiza todo)
+6. Abstract (último, resume todo)
+
+#### Fase 4: Section-Specific Guidelines
+
+**INTRODUCTION**:
+- Párrafo 1: Burden of disease + importance
+- Párrafo 2: Existing interventions + evidence
+- Párrafo 3: Knowledge gap (specific!)
+- Párrafo 4: Study objectives (clear, measurable)
+
+**METHODS**:
+- Be reproducible: otro investigador podría replicar
+- Define ALL terms (no asumir conocimiento)
+- Justify choices (por qué este modelo, este horizon, etc.)
+- Report per CHEERS 2022 (para health econ)
+
+**RESULTS**:
+- Neutral tone (no interpretar aún)
+- Report with precision (CIs, p-values)
+- Reference tables/figures: "Table 1 shows..."
+- Structure: base case → sensitivity → subgroups
+
+**DISCUSSION**:
+- Start with main finding (1 sentence summary)
+- Compare with literature (consistency/discrepancy)
+- Explain discrepancies
+- Policy implications (practical, specific)
+- Limitations (honest, but don't undermine main message)
+- Future research (specific gaps)
+
+**CONCLUSIONS**:
+- Restate main finding (2-3 sentences)
+- Qualified recommendation (NOT absolute)
+  - ✅ "Appears cost-effective under conditions X, Y, Z"
+  - ❌ "Should be implemented immediately"
+- Context of applicability
+- Next steps (pilot, scale-up, further study)
+
+### Academic Writing Standards
+
+**Formal Conventions**:
+- Third person (avoid "we", use "the study" or passive voice sparingly)
+- Past tense for methods/results
+- Present tense for general truths
+- Technical precision (specific terms, not vague language)
+
+**Logical Flow**:
+- Each paragraph: topic sentence → support → conclusion
+- Transitions between paragraphs
+- Logical progression of ideas
+
+**Citation Completeness**:
+- Every claim needs a citation
+- Primary sources preferred over secondary
+- Recent literature (last 5-10 years for reviews)
+- Mix of seminal works + recent evidence
+
+---
+
+## 🔬 SKILL 3: Academic Paper Reviewer Framework
+
+### Cuándo Activar
+- Pre-submission peer review simulation
+- Identificación de debilidades antes de enviar
+- Preparación para responder a revisores
+- Quality assurance final
+
+### Multi-Perspective Review System
+
+Simula 5 revisores independientes con perspectivas NO solapadas:
+
+#### REVIEWER #1: Methodology Specialist
+**Enfoque**: Rigor metodológico, diseño del estudio, análisis estadístico
+
+**Evalúa**:
+- ✓ Study design apropiado para la pregunta
+- ✓ Sample size justificado (power calculation)
+- ✓ Statistical methods correctos
+- ✓ Sensitivity analysis adecuado
+- ✓ Model validation (si aplica)
+
+**Preguntas clave**:
+1. ¿El diseño puede responder la pregunta?
+2. ¿Los métodos estadísticos son apropiados?
+3. ¿El análisis de sensibilidad es suficiente?
+4. ¿Hay sesgos no controlados?
+
+**Output**: Accept / Minor Revisions / Major Revisions / Reject + justificación
+
+---
+
+#### REVIEWER #2: Domain Expert (Health Economics)
+**Enfoque**: Validez económica, supuestos, transferibilidad
+
+**Evalúa**:
+- ✓ Perspective económica apropiada
+- ✓ Time horizon justificado
+- ✓ Discount rate correcto
+- ✓ Cost data sources adecuados
+- ✓ CHEERS 2022 compliance
+- ✓ WTP threshold justificado
+
+**Preguntas clave**:
+1. ¿La perspectiva económica es apropiada?
+2. ¿Los costos capturan todo lo relevante?
+3. ¿Los datos son transferibles al contexto local?
+4. ¿El threshold es apropiado para el contexto?
+
+**Output**: Accept / Minor Revisions / Major Revisions / Reject + justificación
+
+---
+
+#### REVIEWER #3: Cross-Disciplinary (Public Health/Policy)
+**Enfoque**: Relevancia práctica, implementación, equidad
+
+**Evalúa**:
+- ✓ Policy relevance
+- ✓ Implementation feasibility
+- ✓ Equity considerations
+- ✓ Barriers to scale-up
+- ✓ Real-world applicability
+
+**Preguntas clave**:
+1. ¿Por qué importa esto para política/práctica?
+2. ¿Es implementable en el contexto real?
+3. ¿Qué barreras existen?
+4. ¿Se consideró equidad entre subgrupos?
+
+**Output**: Accept / Minor Revisions / Major Revisions / Reject + justificación
+
+---
+
+#### REVIEWER #4: Devil's Advocate
+**Enfoque**: Desafiar argumentos centrales, detectar lógica circular, contra-argumentos
+
+**Evalúa**:
+- ⚠ Supuestos críticos del estudio
+- ⚠ Lógica circular o razonamiento débil
+- ⚠ Claims no respaldados
+- ⚠ Sobre-interpretación de resultados
+- ⚠ Conflictos de interés potenciales
+
+**Preguntas clave**:
+1. **Central Claim Challenge**: ¿Qué pasa si el claim principal es falso?
+2. **Counter-argument**: ¿Cuál es el argumento MÁS FUERTE en contra?
+3. **What if**: Escenarios donde los resultados no se sostienen
+4. **Logical Issues**: Falacias, razonamiento circular
+
+**Strongest Opposing View**:
+"Este análisis asume [supuesto X], pero si [escenario alternativo], entonces [consecuencia que invalida conclusión]"
+
+**Output**: Major Revisions requeridas para calificar claims
+
+---
+
+#### EDITOR-IN-CHIEF: Editorial Decision
+**Enfoque**: Síntesis de los 4 reviewers, decisión final
+
+**Sintetiza**:
+- Common themes across reviewers
+- Critical vs optional revisions
+- Overall manuscript quality
+
+**Decisión**:
+- **Accept**: Publicable como está (raro)
+- **Minor Revisions**: Cambios pequeños requeridos
+- **Major Revisions**: Cambios sustanciales requeridos
+- **Reject**: No publicable incluso con revisiones
+
+**Output**:
+```
+DECISION: [Accept/Minor/Major/Reject]
+
+REQUIRED REVISIONS:
+1. [Reviewer X]: [Issue specific] → [Action required]
+2. [Reviewer Y]: [Issue specific] → [Action required]
+
+OPTIONAL REVISIONS (strengthen paper):
+3. [Reviewer Z]: [Suggestion] → [How it improves]
+
+TIMELINE: [Weeks for revision]
+```
+
+### Review Quality Standards
+
+**Constructive Criticism**:
+- ✓ Specific (not vague: "improve writing" → "Table 2 caption unclear")
+- ✓ Actionable (not just "this is wrong" → "consider X method instead")
+- ✓ Evidence-based (cite why something is problematic)
+
+**Balanced Assessment**:
+- Acknowledge strengths (not just weaknesses)
+- Proportional critique (don't nitpick minor issues if major issues exist)
+- Fair comparison (compare to realistic standards, not perfection)
+
+### Anti-Patterns to Avoid in Reviews
+
+| Anti-Pattern | Por Qué Falla | Correcto |
+|--------------|---------------|----------|
+| Vague criticism | "Methods are weak" sin especificar | "PSA iterations (1000) may be insufficient; consider 10,000" |
+| Scope creep | Pedir un estudio diferente | Evaluar el estudio QUE ES, no el que querías |
+| Contradictory reviews | R1 dice "muy largo", R2 dice "muy corto" | Editor sintetiza y decide |
+| Personal bias | Rechazar porque no usa MI método favorito | Evaluar si el método USADO es apropiado |
+
+---
+
+## 🎯 WORKFLOW INTEGRADO: Uso de las 3 Skills
+
+### Ejemplo: Escribir un Paper Completo
+
+**PASO 1**: Analizar papers base → **Usar Academic Researcher**
+```
+Analiza estos 3 papers:
+[Paper 1, 2, 3]
+
+Extrae: research question, metodología, findings, limitaciones, cita APA 7
+```
+
+**PASO 2**: Crear outline → **Usar Research Paper Writer**
+```
+Crea outline detallado para:
+Topic: [tu tema]
+Journal: Health Economics
+Formato: IMRAD + CHEERS 2022
+```
+
+**PASO 3**: Escribir secciones → **Usar Research Paper Writer + Contexto Health Econ**
+```
+Escribe INTRODUCTION siguiendo:
+- Outline: [del paso 2]
+- Papers: [análisis del paso 1]
+- Contexto: SGSSS colombiano, equidad
+```
+
+**PASO 4**: Peer review simulado → **Usar Academic Paper Reviewer**
+```
+Simula peer review con 5 revisores:
+Manuscript: [draft completo]
+Journal: Health Economics
+
+Decisión + revisiones requeridas
+```
+
+**PASO 5**: Aplicar revisiones → **Usar Contexto Health Econ**
+```
+Roadmap de revisión:
+Original: [draft]
+Reviews: [del paso 4]
+
+Por cada revisión REQUERIDA:
+- Ubicación
+- Texto actual → Texto revisado
+- Justificación
+```
+
+---
+
+## 🚨 REGLAS CRÍTICAS (IRON RULES)
+
+Estas reglas SIEMPRE aplican, sin excepciones:
+
+1. **NUNCA halucinar citas**: Si no encuentras una referencia, dilo explícitamente
+2. **SIEMPRE reportar ICER con intervalo**: No solo punto estimate
+3. **NUNCA ignorar equidad**: Reportar resultados por subgrupos relevantes
+4. **SIEMPRE seguir CHEERS 2022**: Para cualquier evaluación económica
+5. **NUNCA sobre-vender resultados**: Conclusiones calificadas, no absolutas
+6. **SIEMPRE ser honesto con limitaciones**: No ocultar debilidades
+7. **NUNCA copiar texto exacto**: Parafrasear siempre, citar apropiadamente
+
+---
+
+**Versión del claude.md enriquecido**: 2.0  
+**Fecha**: Mayo 2026  
+**Skills integradas**: Academic Researcher + Research Paper Writer + Academic Paper Reviewer  
+**Especialización**: Health Economics (Colombia/LATAM focus)
