@@ -767,363 +767,384 @@ Estas reglas SIEMPRE aplican, sin excepciones:
 
 ---
 
-# 📰 SKILL 4: Opinion Writer - Estilo Editorial Colombiano
+# 📰 SKILL 4: Columna de Opinión Pública
 
-## 🎯 Cuándo Activar
+## 🎯 Objetivo
 
-- Escribir artículos de opinión para periódicos
-- Columnas editoriales sobre economía, política pública, o temas sociales
-- Ensayos argumentativos cortos (800-1000 palabras)
-- Piezas de análisis de políticas públicas colombianas
+Producir columnas de opinión originales en español con un estilo editorial sobrio, directo, analítico y basado en datos. El texto debe parecer una columna de prensa de 400 a 500 palabras: clara para público general, pero sustentada en cifras, instituciones, comparaciones y consecuencias de política pública.
 
----
-
-## 🔍 ANÁLISIS DEL ESTILO
-
-### Perfil del Autor
-Basado en 9 artículos publicados en El Mundo y otros medios (2016-2018), este estilo corresponde a un **economista colombiano** especializado en:
-- Economía de la salud
-- Políticas públicas
-- Análisis institucional
-- Temas laborales y fiscales
-
-**Audiencia objetivo**: Lectores educados, tomadores de decisión, clase media-alta colombiana.
+**Regla fundamental**: No copies frases, giros únicos, párrafos ni estructura literal de autores o documentos de referencia. Usa este documento como una guía de rasgos generales de estilo, no como una orden de imitación textual.
 
 ---
 
-## ✍️ CARACTERÍSTICAS DEL ESTILO
+## 🔧 Cuándo Activar
 
-### 1. Tono y Voz Narrativa
+Usa este skill cuando el usuario pida:
 
-**Tono dominante**: 
-- **Pragmático-analítico**: No es emotivo ni panfletario
-- **Didáctico sin condescendencia**: Explica conceptos técnicos de manera accesible
-- **Crítico constructivo**: Señala problemas pero propone soluciones o reflexiones
-- **Confiado pero humilde**: Usa "creo", "pienso", "me parece" (no "obviamente" o "está claro")
-
-**Voz narrativa**:
-- **Primera persona**: "Yo creo", "me parece", "entiendo que"
-- **Cercanía con el lector**: "Sabe usted", "estando de acuerdo", "ojalá que"
-- **Autoridad técnica implícita**: Cita datos sin alarde, referencias a estudios específicos
-
-**Ejemplos representativos**:
-> "Yo creo y siempre he creído en la seriedad del DANE."
-> "Estando de acuerdo en que este último es un buen salario..."
-> "Me parece que el medio no es consistente con el fin..."
+- Una columna de opinión
+- Un artículo de opinión para prensa
+- Un editorial breve
+- Una reflexión argumentada sobre un problema público
+- Un texto de opinión sobre salud, educación, economía, impuestos, Estado, juventud, género, ciencia, innovación o política pública
 
 ---
 
-### 2. Estructura Argumentativa
+## 📋 Resultado Esperado
 
-**Patrón recurrente** (casi todos los artículos siguen esta estructura):
+Entrega, salvo que el usuario pida otra cosa:
 
-#### **Apertura con Gancho** (Primer párrafo)
-- Evento reciente o dato específico que motiva el artículo
-- Muy concreto: cifras, fechas, nombres propios
-- Nunca abstracto o filosófico
+1. **Un título corto** (2-6 palabras)
+2. **Una columna de 400-500 palabras**
+3. **Párrafos breves o medianos** (6-8 párrafos)
+4. **Una tesis clara**
+5. **Datos concretos** cuando estén disponibles
+6. **Un cierre contundente** con implicación pública
 
-**Ejemplos**:
-> "La semana pasada el parlamento de Corea del Sur destituyó a la presidenta..."
-> "El DANE ha hecho la primera entrega de resultados del CENSO..."
-> "Las incapacidades laborales están disparadas."
-
-#### **Desarrollo con Datos** (Párrafos 2-4)
-- Cifras específicas (siempre con fuente implícita o explícita)
-- Comparaciones internacionales o temporales
-- Contextualización del problema
-
-**Patrón numérico**:
-- Preferencia por porcentajes y cifras absolutas alternadas
-- Comparaciones A vs B muy claras
-- Años específicos (no "hace unos años" sino "entre 2015 y 2016")
-
-#### **Giro Crítico o Consecuencias Inesperadas** (Párrafos 3-5)
-- "¿Cuál es la consecuencia inesperada nefasta?"
-- "Ahí no acaban los efectos..."
-- "Hay muchas hipótesis sobre este fenómeno..."
-- "Desafortunadamente..."
-
-#### **Cierre con Reflexión o Propuesta** (Último párrafo)
-- **NO** resume lo dicho (evita redundancia)
-- Propone acción concreta O plantea reflexión más amplia
-- Tono esperanzador o preocupado según el tema
-- Frecuentemente usa "ojalá", "hay cosas que...", "mucho ganaríamos"
-
-**Ejemplos de cierres**:
-> "Ojalá que las fuerzas judiciales del país le metan la ficha a estudiar si existen abusos..."
-> "Hace falta un movimiento 'masculinista' que ayude a visualizar los problemas..."
-> "Ahí está la plata para cubrir los faltantes del gobierno nacional..."
+**No agregues**:
+- Subtítulos internos (salvo petición expresa)
+- Listas de recomendaciones (salvo encargo técnico)
 
 ---
 
-### 3. Vocabulario y Expresiones Características
+## 🎙️ Perfil de Voz
 
-#### **Conectores y Transiciones**
-- "Así las cosas" (muy característico)
-- "De otra parte"
-- "Ahora bien"
-- "En conclusión pienso que..."
-- "Ahí no acaban los efectos"
-- "Y así podríamos seguir"
+La voz debe ser:
 
-#### **Expresiones Valorativas**
-- "Esto es gravísimo porque..."
-- "Es una buena coincidencia que..."
-- "Lo más irónico de todo es que..."
-- "Desafortunadamente"
-- "Bienvenidos esos datos"
-- "Mucho ganaríamos si..."
+- ✅ **Sobria, argumentativa y de prensa**
+- ✅ **Cercana, pero no coloquial en exceso**
+- ✅ **Crítica sin sonar panfletaria**
+- ✅ **Pedagógica sin sonar académica**
+- ✅ **Segura en la tesis, pero no grandilocuente**
+- ✅ **Orientada a**: instituciones, incentivos, reglas, gasto público, eficiencia, implementación, consecuencias no previstas
+- ✅ **Capaz de conceder** parcialmente un punto antes de refutarlo
 
-#### **Lenguaje Económico-Técnico Accesible**
-- Explica acrónimos: "el Sistema General de Participaciones"
-- Traduce conceptos: "Esto en palabras sencillas significa que..."
-- Usa jerga técnica solo cuando es necesaria
-- Prefiere "billones de pesos" a "$X"
-
-#### **Colombianismos y Localismos**
-- "Meterle la ficha" (poner atención/esfuerzo)
-- "Nos quejamos y con razón"
-- "De hecho" (muy frecuente)
-- Referencias constantes a Colombia, DANE, EPS, IPS, SGSSS
+**Lector objetivo**: Ciudadanos informados, no especialistas.
 
 ---
 
-### 4. Ritmo y Longitud de Oraciones
+## 🏗️ Rasgos Estructurales Obligatorios
 
-**Patrón de párrafos**:
-- **Párrafos cortos**: 2-4 oraciones típicamente
-- **Oraciones medias**: 15-25 palabras promedio
-- **Variación deliberada**: Alterna oraciones cortas (impacto) con largas (desarrollo)
+### 1. Apertura Concreta
 
-**Ejemplos**:
-> "Esto es gravísimo porque termina siendo un desfalco de 2.1 billones de pesos anuales a valores de 2018." [Oración larga con impacto]
-> 
-> "Hay cosas que siguen cambiando y para bien del país." [Oración corta de cierre]
+**Empieza con**:
+- Un hecho reciente
+- Una cifra
+- Una decisión pública
+- Un informe institucional
+- Un evento internacional
+- Una frase que plantee una preocupación ciudadana
 
-**Puntuación característica**:
-- **Dos puntos frecuentes**: Para introducir explicaciones o listas
-- **Punto y coma raro**: Prefiere punto seguido
-- **Comillas**: Para expresiones coloquiales o conceptos cuestionables
-  - Ejemplo: "política pública", "masculinista"
+**Evita**: Abstracciones genéricas.
 
----
-
-### 5. Recursos Retóricos
-
-#### **Preguntas Retóricas**
-Usa preguntas para estructurar argumentos, NO para dramatizar:
-> "¿Cuál es la consecuencia inesperada nefasta?"
-> "¿Para qué? Para que no nos pase lo que le pasó a Argentina..."
-> "¿Por qué? Por una combinación muy extraña..."
-
-#### **Comparaciones Internacionales**
-Siempre contextualiza a Colombia vs otros países:
-- Corea del Sur, Estados Unidos, Europa
-- "Si miramos hacia Europa... Si miramos hacia Escandinavia..."
-- Datos comparativos: "Somos el país número 17 en desarrollo humano..."
-
-#### **Ironía Sutil**
-NO es sarcástico, pero sí irónico cuando señala contradicciones:
-> "Lo más irónico de todo es que además tienen toda la disposición para hacerlo."
-> "Como siempre, este premio se entrega muchos años después, cuando ya todo nos parece obvio."
-
-#### **Datos como Autoridad**
-Los números son su principal recurso retórico:
-- Nunca dice "mucha gente" → dice "2.5 millones de personas"
-- Nunca dice "últimos años" → dice "entre 2015 y 2016"
-- Cita fuentes: DANE, ANDI, Banco de la República, estudios internacionales
+**Ejemplos de formas** (no de contenido):
+- "La semana pasada..."
+- "El informe más reciente..."
+- "El gobierno anunció..."
+- "A menudo escuchamos..."
+- "Cualquier ciudadano que mire..."
 
 ---
 
-### 6. Temas y Preocupaciones Recurrentes
+### 2. Tesis Temprana
 
-**Temas centrales**:
-1. **Ineficiencia del Estado colombiano**
-   - Gasto público mal asignado
-   - Corrupción estructural
-   - Políticas bien diseñadas pero mal implementadas
+**Antes del tercer párrafo** debe quedar claro qué se va a defender.
 
-2. **Inequidad y desarrollo**
-   - Comparaciones con países desarrollados
-   - Brecha entre potencial y realidad
-   - Equidad de género (desde perspectiva equilibrada)
-
-3. **Economía de la salud**
-   - Sistema de salud colombiano (SGSSS)
-   - Gasto en salud, incapacidades, fraude
-   - Comparaciones internacionales
-
-4. **Políticas basadas en evidencia**
-   - Critica soluciones populistas
-   - Aboga por análisis técnico riguroso
-   - Enfatiza consecuencias no intencionadas
-
-**Posición ideológica**:
-- **Pro-mercado pero no ultra-liberal**: Valora instituciones, regulación inteligente
-- **Técnico antes que político**: Prefiere análisis de datos a banderas ideológicas
-- **Reformista pragmático**: No revolucionario, busca mejoras incrementales
+**Formulaciones típicas**:
+- "El problema no es X, sino Y."
+- "Este dato parece anecdótico, pero tiene implicaciones serias."
+- "La medida suena razonable, pero puede producir el efecto contrario."
+- "La discusión está mal enfocada."
+- "La política existe; lo que falta es implementación."
 
 ---
 
-## 📐 ESTRUCTURA TIPO (Template)
+### 3. Desarrollo por Implicaciones
 
-### **TÍTULO**
-- Corto, provocador, sin signos de interrogación
-- Frecuentemente sustantivizado: "Incapacitados", "Bajarlos es peor"
-- A veces frase nominal: "Plata local, no nacional"
+**No escribas** una columna puramente emocional.
 
-### **PÁRRAFO 1: Gancho**
+**Secuencia preferida**:
+1. Hecho o dato inicial
+2. Explicación sencilla del mecanismo
+3. Cifra o comparación
+4. Consecuencia institucional, fiscal, social o política
+5. Matiz o contraargumento
+6. Conclusión normativa
+
+---
+
+### 4. Uso de Datos
+
+**Incluye**: Números, porcentajes, años, instituciones, comparaciones.
+
+**Funciones argumentativas de los datos**:
+- Mostrar magnitud
+- Corregir una intuición
+- Comparar sectores
+- Revelar una inconsistencia
+- Mostrar consecuencia fiscal o social
+- Ubicar a Colombia frente a otro país
+
+**Si no tienes datos**:
+- Escribe de forma prudente
+- Marca como `[dato por verificar]`
+- **NO inventes cifras**
+
+---
+
+### 5. Tono Explicativo
+
+**Fórmulas discursivas** (1-2 por columna máximo):
+- "Esto quiere decir que..."
+- "En palabras sencillas..."
+- "Mejor dicho..."
+- "En últimas..."
+- "El punto de fondo es..."
+- "La consecuencia es..."
+
+---
+
+### 6. Cierre con Juicio Claro
+
+**El último párrafo debe** cerrar con una postura.
+
+**Formas recomendadas**:
+- Una consecuencia de país
+- Una advertencia
+- Una prioridad de política pública
+- Una reformulación del problema
+- Una frase final breve y recordable
+
+**Evita**: Cierres motivacionales genéricos, preguntas abiertas débiles.
+
+---
+
+## 📐 Arquitectura de la Columna
+
+### Extensión Estándar
+
+- **Título**: 2-6 palabras
+- **Cuerpo**: 400-500 palabras
+- **Párrafos**: 6-8
+- **Cada párrafo**: 40-80 palabras (flexible)
+- **Oraciones**: Mezcla de frases cortas y medianas (evita periodos excesivamente largos)
+
+### Plantilla Base
+
+**Título breve**
+
+**Párrafo 1**: Hecho reciente, cifra o situación concreta
+
+**Párrafo 2**: Tesis o giro interpretativo (lo obvio no necesariamente es correcto)
+
+**Párrafo 3**: Explicación del mecanismo (por qué ocurre o por qué importa)
+
+**Párrafo 4**: Dato, comparación o evidencia institucional
+
+**Párrafo 5**: Consecuencia inesperada, costo fiscal, falla de incentivos o problema de implementación
+
+**Párrafo 6**: Matiz (reconocer parcialmente una preocupación legítima)
+
+**Párrafo 7**: Propuesta, prioridad o enfoque correcto
+
+**Párrafo 8**: Cierre con frase de síntesis
+
+---
+
+## 🎨 Recursos Retóricos (Usar con Moderación)
+
+- Pregunta retórica breve
+- Contraste entre intención y resultado
+- Contraste entre lo nacional y lo local
+- Comparación internacional
+- "No se trata de X, sino de Y"
+- "Hay mejores formas de hacerlo"
+- "El problema no es que falte política, sino que falte implementación"
+- "Este dato suena anecdótico, pero..."
+- "Ahí está el punto"
+- "Lo cierto es que..."
+
+**Importante**: El argumento manda sobre el estilo. No conviertas la columna en una sucesión de frases hechas.
+
+---
+
+## 📚 Léxico y Registro
+
+### Vocabulario Preferido
+
+**Institucional/Económico**:
+- Estado, gobierno, instituciones
+- Recursos, impuestos, gasto público
+- Política pública, implementación, incentivos
+- Productividad, talento humano
+- Cobertura, equidad, eficiencia
+- Reglas, corrupción, transferencias
+- Mercado laboral, protección social
+
+**Sectorial**:
+- Salud, educación
+- Municipios, departamentos
+
+### Colombianismos Sobrios (Máximo 1 por Columna)
+
+- Plata
+- Plática  
+- Meterle la ficha
+- No mirar más allá de las narices
+
+**Usar solo** si el contexto lo permite.
+
+---
+
+## 🎯 Temas Donde Funciona Especialmente Bien
+
+- Gasto público e impuestos
+- Sistema de salud
+- Educación
+- Juventud y mercado laboral
+- Género como problema público
+- Corrupción e incentivos
+- Descentralización
+- Financiamiento de políticas sociales
+- Innovación y crecimiento económico
+- Comparaciones internacionales útiles para Colombia
+- Diferencia entre política pública escrita e implementación real
+
+---
+
+## 💡 Enfoques Argumentativos
+
+### Patrón A: Medida Popular, Efecto Indeseado
+
+1. Una medida suena justa
+2. Su objetivo es entendible
+3. **PERO** el mecanismo no corrige el problema
+4. Puede generar un efecto peor
+5. Se propone enfocar la política en incentivos o implementación
+
+---
+
+### Patrón B: Dato Técnico, Impacto Ciudadano
+
+1. Un dato parece estadístico
+2. Ese dato cambia transferencias, gasto, indicadores o decisiones
+3. La magnitud es fiscal o socialmente importante
+4. El país debe corregir la forma de medir o ejecutar
+
+---
+
+### Patrón C: Concepto Abusado
+
+1. Una expresión se usa con frecuencia
+2. Se define o contextualiza brevemente
+3. Se muestra que el problema no es ausencia de concepto
+4. Se concluye que el cuello de botella está en ejecución
+
+---
+
+### Patrón D: Referente Internacional
+
+1. Un país o caso externo aparece por un hecho reciente
+2. Ese hecho no debe ocultar una trayectoria
+3. Se presentan logros concretos
+4. Se extrae una lección para Colombia
+
+---
+
+## ✅ Reglas de Estilo
+
+### HAZ:
+
+- ✅ Escribe con claridad
+- ✅ Usa conectores explícitos
+- ✅ Presenta datos en frases simples
+- ✅ Incluye matices
+- ✅ Explica por qué el dato importa
+- ✅ Mantén una tesis visible
+- ✅ Termina con una postura
+
+### NO HAGAS:
+
+- ❌ No uses lenguaje académico pesado
+- ❌ No uses exceso de adjetivos
+- ❌ No conviertas la columna en informe técnico
+- ❌ No escribas como comunicado institucional
+- ❌ No uses citas extensas
+- ❌ No llenes el texto de bibliografía
+- ❌ No uses sarcasmo agresivo
+- ❌ No inventes datos
+- ❌ **No copies expresiones distintivas de textos fuente**
+- ❌ No atribuyas la columna a una persona real salvo petición explícita
+
+---
+
+## 📊 Manejo de Evidencia
+
+**Si el usuario proporciona cifras**: Úsalas.
+
+**Si el usuario pide columna sobre tema actual**:
+- Verifica datos antes de escribir
+- Si no puedes verificar:
+  - Usa formulaciones prudentes
+  - Evita cifras exactas inventadas
+  - Marca como `[dato por verificar]`
+  - Pide o sugiere fuente necesaria solo si el dato es indispensable
+
+---
+
+## 🔍 Control de Originalidad
+
+**Antes de entregar, verifica**:
+
+- [ ] ¿El texto es original?
+- [ ] ¿No reproduce frases o secuencias únicas de documentos de referencia?
+- [ ] ¿La columna conserva solo rasgos generales de estructura, tono y argumentación?
+- [ ] ¿El argumento depende de datos o mecanismos, no solo de opiniones?
+- [ ] ¿El cierre tiene una postura clara?
+
+---
+
+## ✅ Checklist Final
+
+La columna está lista si cumple:
+
+- [ ] Tiene título breve (2-6 palabras)
+- [ ] Abre con hecho, dato o situación concreta
+- [ ] La tesis aparece temprano (antes del párrafo 3)
+- [ ] Hay al menos un dato, comparación o institución
+- [ ] Explica una implicación no obvia
+- [ ] Tiene un matiz o concesión
+- [ ] Cierra con juicio claro
+- [ ] Está entre 400-500 palabras (salvo instrucción contraria)
+- [ ] **No copia frases ni párrafos de textos de referencia**
+
+---
+
+## 🎯 Prompt para Activar
+
+Cuando quieras escribir una columna de opinión:
+
 ```
-[Evento reciente concreto con fecha/cifra] + [Implicación inmediata]
-
-Ejemplo:
-"El DANE ha hecho la primera entrega de resultados del CENSO. De acuerdo al 
-director Oviedo a septiembre 28 somos 41.9 millones de colombianos."
-```
-
-### **PÁRRAFO 2-3: Contexto y Datos**
-```
-[Explicación del problema] + [Datos duros con fuentes] + [Comparaciones]
-
-Patrón:
-- Citar cifra específica
-- Explicar qué significa
-- Comparar con algo conocido
-```
-
-### **PÁRRAFO 4-5: Consecuencias/Análisis**
-```
-[Conectores de transición] + [Desarrollo del argumento] + [Consecuencias no obvias]
-
-Conectores clave:
-- "Así las cosas"
-- "De otra parte"
-- "Ahora bien"
-- "Ahí no acaban los efectos"
-```
-
-### **PÁRRAFO 6: Cierre**
-```
-[Reflexión final] o [Propuesta concreta] + [Tono esperanzador o crítico]
-
-Patrones de cierre:
-- "Ojalá que [institución] le metan la ficha a [acción]"
-- "Hace falta [propuesta]"
-- "Hay cosas que siguen cambiando y para bien del país"
-- "Mucho ganaríamos si [acción]"
-```
-
----
-
-## ✅ CHECKLIST DE CALIDAD
-
-Antes de publicar, verifica:
-
-**Contenido**:
-- [ ] ¿Empiezas con dato/evento concreto (no abstracto)?
-- [ ] ¿Incluyes mínimo 3 cifras específicas?
-- [ ] ¿Citas fuente de datos (DANE, estudio, institución)?
-- [ ] ¿Evitas generalizar ("mucha gente" → "X millones")?
-- [ ] ¿Planteas consecuencia no obvia del fenómeno?
-
-**Estilo**:
-- [ ] ¿Usas primera persona ("creo", "pienso") al menos 1 vez?
-- [ ] ¿Evitas absolutos ("obviamente", "claramente")?
-- [ ] ¿Incluyes al menos 1 pregunta retórica para estructurar?
-- [ ] ¿Usas "así las cosas" o "de otra parte" como conector?
-- [ ] ¿El cierre NO resume sino que propone/reflexiona?
-
-**Tono**:
-- [ ] ¿Crítico pero no panfletario?
-- [ ] ¿Técnico pero accesible?
-- [ ] ¿Contextualizado a Colombia?
-- [ ] ¿Propositivo (aunque sea implícitamente)?
-
----
-
-## 🚫 ANTI-PATRONES (Evitar)
-
-| ❌ NO hacer | ✅ SÍ hacer |
-|------------|-----------|
-| "Es obvio que..." | "Me parece que..." / "Creo que..." |
-| "Todo el mundo sabe..." | "Según [fuente], X% de colombianos..." |
-| "Desde tiempos inmemoriales..." | "En la década de los cincuentas..." |
-| Cierre que resume | Cierre que propone o reflexiona |
-| Tono indignado/emotivo | Tono crítico-analítico |
-| Generalizaciones sin datos | Cifras específicas con fuente |
-| Párrafos largos (>5 oraciones) | Párrafos cortos (2-4 oraciones) |
-| Citar autores académicos extensamente | Mencionar estudios brevemente |
-
----
-
-## 📝 EJEMPLO MODELO
-
-**Estructura anotada de "Bajarlos es peor"**:
-
-```
-[TÍTULO provocador, verbo + adjetivo comparativo]
-Bajarlos es peor
-
-[GANCHO: Evento + cifra concreta]
-La primera pregunta de la consulta que se votará el 26 de agosto propone 
-bajar los altos salarios a 395 funcionarios del Estado y fijarlos en un 
-máximo de 25 salarios mínimos.
-
-[CONTEXTO: Posicionamiento equilibrado]
-Estando de acuerdo en que este último es un buen salario y que representa 
-25 veces lo que una buena parte de los colombianos gana, me parece que 
-el medio no es consistente con el fin...
-
-[ANÁLISIS: Desmonta argumentos populares con lógica]
-Si el fin es desmotivar a gente corrupta a postularse al senado, está 
-claro que no será una medida efectiva. El corrupto ya tiene dinero mal 
-habido...
-
-[CONSECUENCIA NO OBVIA: Giro crítico]
-¿Cuál es la consecuencia inesperada nefasta? Nada más y nada menos que 
-hacer más improbable para el Estado el conseguir gente de primer nivel...
-
-[EFECTO DOMINÓ: Desarrollo]
-Entiendo que bajar el salario de los congresistas tendrá como efecto 
-dominó una caída general de los salarios...
-
-[CIERRE: Conclusión con "pienso" + consecuencia para país]
-En conclusión pienso que bajar el salario de congresistas es inconveniente 
-porque no castiga a los corruptos, de hecho, nos castiga a todos los 
-colombianos. La fuga de talento humano al sector privado será mayor y de 
-esta manera perdemos más como país.
-```
-
----
-
-## 🎯 PROMPT PARA ACTIVAR ESTE ESTILO
-
-Cuando quieras escribir un artículo con este estilo, usa:
-
-```
-Escribe un artículo de opinión sobre [tema] siguiendo el estilo 
-Opinion Writer colombiano:
+Escribe una columna de opinión sobre [tema] siguiendo la SKILL 4:
 
 TEMA: [tu tema]
-LONGITUD: 800-1000 palabras
-DATO MOTIVADOR: [evento reciente o cifra que motiva el artículo]
+ENFOQUE: [patrón A/B/C/D si aplica]
+DATO MOTIVADOR: [hecho reciente o cifra] (opcional)
 
 Requisitos:
-- Gancho con dato concreto (fecha/cifra)
-- Mínimo 3 cifras específicas con fuente
-- Tono: crítico-analítico, primera persona ("creo", "pienso")
-- Conectores: "así las cosas", "de otra parte", "ahora bien"
-- Cierre: propuesta o reflexión (NO resumen)
-- Párrafos cortos (2-4 oraciones)
-- Contextualizado a Colombia
+- Apertura concreta (hecho/cifra)
+- Tesis clara antes del párrafo 3
+- Mínimo 1 dato específico
+- Tono sobrio, argumentativo
+- Desarrollo por implicaciones
+- Cierre con postura clara
+- 400-500 palabras
 ```
 
 ---
 
-**Versión**: 1.0  
-**Basado en**: 9 artículos publicados (2016-2018)  
-**Medio principal**: El Mundo (Medellín)  
-**Especialización**: Economía de la salud + Políticas públicas colombianas
+**Versión**: 2.0 (Profesional)  
+**Fuente**: Documento de skill profesional de columna de opinión pública  
+**Actualización**: Reemplazo completo de versión anterior basada en análisis de artículos
 
 ---
 
