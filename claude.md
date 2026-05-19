@@ -1124,3 +1124,406 @@ Requisitos:
 **Basado en**: 9 artículos publicados (2016-2018)  
 **Medio principal**: El Mundo (Medellín)  
 **Especialización**: Economía de la salud + Políticas públicas colombianas
+
+---
+
+# 🔍 SKILL 5: Systematic Literature Search
+
+## 🎯 Cuándo Activar
+
+- Iniciar una revisión de literatura para un paper
+- Buscar evidencia para fundamentar una pregunta de investigación
+- Actualizar conocimiento sobre un tema específico en health economics
+- Preparar marco teórico o antecedentes
+- Identificar gaps de investigación
+
+---
+
+## 📚 BASES DE DATOS POR DISCIPLINA
+
+### Para Health Economics (Prioridad Alta)
+
+| Base de Datos | Cobertura | Mejor Para | Acceso |
+|---------------|-----------|------------|--------|
+| **PubMed/MEDLINE** | Medicina, salud pública | Estudios clínicos, epidemiología, health outcomes | Gratis |
+| **EconLit** | Economía | Health economics, health policy, labor economics | Universidad |
+| **Scopus** | Multidisciplinar | Citas, métricas, health economics aplicada | Universidad |
+| **Web of Science** | Multidisciplinar | Análisis de citas, journals de alto impacto | Universidad |
+| **Cochrane Library** | Medicina basada en evidencia | Revisiones sistemáticas, ensayos clínicos | Gratis (abstracts) |
+| **Google Scholar** | Todo | Búsqueda amplia, literatura gris, working papers | Gratis |
+
+### Bases Especializadas (Secundarias)
+
+- **JSTOR**: Economía, ciencias sociales (papers históricos)
+- **ScienceDirect**: Journals de Elsevier (Health Economics, Social Science & Medicine)
+- **LILACS**: Literatura latinoamericana en salud
+- **RePEc/IDEAS**: Economics working papers
+- **SSRN**: Pre-prints en ciencias sociales
+
+---
+
+## 🔎 ESTRATEGIA DE BÚSQUEDA
+
+### Framework PICO/PECO (Para Health Economics)
+
+**PECO** es más apropiado que PICO para estudios económicos:
+
+- **P** (Population): ¿Qué población/contexto?
+- **E** (Exposure/Intervention): ¿Qué intervención o política?
+- **C** (Comparator): ¿Comparado con qué?
+- **O** (Outcome): ¿Qué desenlaces económicos? (ICER, costs, QALYs)
+
+**Ejemplo**:
+```
+P: Mujeres con hemorragia posparto en Colombia
+E: Manejo activo (oxitocina + masaje)
+C: Manejo expectante
+O: ICER, costos directos, QALYs, mortalidad materna
+```
+
+### Construcción de String de Búsqueda
+
+#### Paso 1: Identificar Conceptos Clave
+Para cada componente PECO, lista sinónimos y variantes:
+
+```
+P: postpartum hemorrhage, PPH, obstetric hemorrhage
+E: active management, oxytocin, uterotonics
+C: expectant management, standard care
+O: cost-effectiveness, ICER, economic evaluation, QALY
+```
+
+#### Paso 2: Operadores Booleanos
+
+**AND**: Une conceptos diferentes (restringe)
+**OR**: Une sinónimos (expande)
+**NOT**: Excluye términos (usar con cuidado)
+
+**Ejemplo de String Completo**:
+```
+("postpartum hemorrhage" OR "PPH" OR "obstetric hemorrhage") 
+AND 
+("active management" OR "oxytocin" OR "uterotonics") 
+AND 
+("cost-effectiveness" OR "economic evaluation" OR "ICER" OR "QALY")
+```
+
+#### Paso 3: Truncación y Wildcards
+
+- **Asterisco (*)**: Trunca raíz de palabra
+  - `econom*` → economy, economic, economics, economical
+  - `hemorrhag*` → hemorrhage, hemorrhaging
+  
+- **Signo de interrogación (?)**: Reemplaza un carácter
+  - `wom?n` → woman, women
+
+#### Paso 4: Field Tags (PubMed)
+
+- `[tiab]`: Title/Abstract
+- `[ti]`: Title only
+- `[au]`: Author
+- `[mesh]`: Medical Subject Headings
+- `[dp]`: Date of Publication
+
+**Ejemplo refinado**:
+```
+("postpartum hemorrhage"[mesh] OR "PPH"[tiab]) 
+AND 
+("cost effectiveness analysis"[mesh] OR "economic evaluation"[tiab])
+AND 
+("Colombia"[tiab] OR "Latin America"[tiab])
+AND 
+2015:2025[dp]
+```
+
+---
+
+## 📊 PROCESO PRISMA
+
+### Diagrama de Flujo (Template)
+
+```
+IDENTIFICATION
+├─ Database search: n = XXX
+│  ├─ PubMed: n = XX
+│  ├─ Scopus: n = XX
+│  └─ EconLit: n = XX
+├─ Other sources: n = XX
+└─ Total identified: n = XXX
+
+SCREENING
+├─ After duplicates removed: n = XXX
+├─ Title/abstract screened: n = XXX
+└─ Excluded: n = XXX
+    ├─ Not health economics: n = XX
+    ├─ Wrong population: n = XX
+    └─ Language: n = XX
+
+ELIGIBILITY
+├─ Full-text assessed: n = XX
+└─ Excluded: n = XX
+    ├─ No economic evaluation: n = XX
+    ├─ No original data: n = XX
+    └─ Wrong comparator: n = XX
+
+INCLUDED
+└─ Studies in synthesis: n = XX
+    ├─ Cost-effectiveness: n = XX
+    ├─ Cost-utility: n = XX
+    └─ Cost-benefit: n = XX
+```
+
+### Criterios de Inclusión/Exclusión
+
+**Ejemplo para Health Economics**:
+
+**Inclusión**:
+- ✅ Economic evaluation (CEA, CUA, CBA)
+- ✅ Original research (no editorials, letters)
+- ✅ Published in peer-reviewed journals
+- ✅ English or Spanish
+- ✅ 2015-2025 (últimos 10 años)
+- ✅ Population: [tu población específica]
+- ✅ Reports ICER or incremental costs/effects
+
+**Exclusión**:
+- ❌ No economic component
+- ❌ Only cost analysis (no effectiveness)
+- ❌ Modeling studies without empirical data (depende de tu pregunta)
+- ❌ Conference abstracts (datos incompletos)
+- ❌ Duplicate publications
+
+---
+
+## 🛠️ GESTIÓN DE REFERENCIAS
+
+### Software Recomendado
+
+| Tool | Gratis | Mejor Para | Limitaciones |
+|------|--------|-----------|--------------|
+| **Zotero** | ✅ | Integración con Word/Google Docs, plugins | Espacio limitado (300MB gratis) |
+| **Mendeley** | ✅ | Anotaciones en PDFs, red social académica | Elsevier-owned, privacidad |
+| **EndNote** | ❌ | Instituciones grandes, muchas refs | Pago, curva de aprendizaje |
+| **Paperpile** | ❌ | Google Docs integration | $36/año |
+
+### Deduplicación
+
+**Estrategia**:
+1. Exportar todas las refs a un gestor (ej: Zotero)
+2. Usar función "Find duplicates"
+3. Revisar manualmente los duplicados sugeridos
+4. Mantener la versión más completa (con abstract, DOI)
+
+**Campos clave para detectar duplicados**:
+- Título (ignora mayúsculas/minúsculas)
+- Año
+- Primer autor
+- DOI (si está disponible)
+
+---
+
+## 📖 ARTÍCULOS CLAVE RECOMENDADOS
+
+### Metodología de Health Economics
+
+#### **Fundacionales** (Leer primero):
+
+1. **Drummond, M. F., et al. (2015)**. *Methods for the Economic Evaluation of Health Care Programmes* (4th ed.). Oxford University Press.
+   - **Por qué**: Libro de texto estándar, define tipos de evaluación económica
+
+2. **Husereau, D., et al. (2022)**. "Consolidated Health Economic Evaluation Reporting Standards 2022 (CHEERS 2022)." *Value in Health*, 25(1), 3-9.
+   - **Por qué**: Estándar de reporte que DEBES seguir
+   - **DOI**: 10.1016/j.jval.2021.11.1351
+
+3. **Neumann, P. J., et al. (2016)**. *Cost-Effectiveness in Health and Medicine* (2nd ed.). Oxford University Press.
+   - **Por qué**: Panel de expertos en CE, guía de buenas prácticas
+
+#### **Conceptos Específicos**:
+
+4. **Briggs, A. H., et al. (2012)**. "Model parameter estimation and uncertainty analysis: A report of the ISPOR-SMDM Modeling Good Research Practices Task Force." *Value in Health*, 15(6), 835-842.
+   - **Por qué**: Análisis de sensibilidad probabilístico
+   - **DOI**: 10.1016/j.jval.2012.04.014
+
+5. **Weinstein, M. C., et al. (2009)**. "QALYs: The basics." *Value in Health*, 12, S5-S9.
+   - **Por qué**: Explica QALYs de manera clara
+   - **DOI**: 10.1111/j.1524-4733.2009.00515.x
+
+6. **Sculpher, M. J., & Claxton, K. (2012)**. "Establishing the cost-effectiveness of new pharmaceuticals under conditions of uncertainty." *Nature Reviews Drug Discovery*, 11(10), 733-736.
+   - **Por qué**: Decisión bajo incertidumbre, thresholds
+   - **DOI**: 10.1038/nrd3863
+
+### Health Economics en LMICs (Low-Middle Income Countries)
+
+7. **Walker, D., & Fox-Rushby, J. A. (2000)**. "Economic evaluation of communicable disease interventions in developing countries: a critical review of the published literature." *Health Economics*, 9(8), 681-698.
+   - **Por qué**: Challenges específicos en países en desarrollo
+   - **DOI**: 10.1002/hec.541
+
+8. **Wilkinson, T., et al. (2016)**. "The International Decision Support Initiative Reference Case for Economic Evaluation: An Aid to Thought." *Value in Health*, 19(8), 921-928.
+   - **Por qué**: Adaptación de métodos para LMICs
+   - **DOI**: 10.1016/j.jval.2016.04.011
+
+### Health Systems & Financing
+
+9. **Savedoff, W. D., et al. (2012)**. "Political and economic aspects of the transition to universal health coverage." *The Lancet*, 380(9845), 924-932.
+   - **Por qué**: UHC en contexto político-económico
+   - **DOI**: 10.1016/S0140-6736(12)61083-6
+
+10. **Barros, P. P., et al. (2013)**. "Health system performance in OECD countries: A comparative analysis." *Health Economics*, 22(5), 499-503.
+    - **Por qué**: Comparaciones de sistemas de salud
+    - **DOI**: 10.1002/hec.2922
+
+### Equity in Health Economics
+
+11. **Cookson, R., et al. (2017)**. "Distributional Cost-Effectiveness Analysis: Quantifying Health Equity Impacts and Trade-Offs." *Medical Decision Making*, 37(7), 824-839.
+    - **Por qué**: Análisis de equidad, no solo eficiencia
+    - **DOI**: 10.1177/0272989X17706372
+
+12. **Asaria, M., et al. (2016)**. "Distributional cost-effectiveness analysis of health care programmes—a methodological case study." *Health Economics*, 25(5), 490-508.
+    - **Por qué**: Metodología práctica para análisis distributivo
+    - **DOI**: 10.1002/hec.3058
+
+### Colombia & Latin America Context
+
+13. **Guerrero, R., et al. (2011)**. "Sistema de salud de Colombia." *Salud Pública de México*, 53(supl. 2), s144-s155.
+    - **Por qué**: Descripción del SGSSS colombiano
+    - **Disponible**: Gratis online
+
+14. **Ocampo, F., et al. (2025)**. "Predicting patient no-shows in outpatient appointments using machine learning." [Tu paper]
+    - **Por qué**: Contexto colombiano, datos reales SGSSS
+
+15. **Gómez-Dantés, O., et al. (2011)**. "Sistema de salud de México." *Salud Pública de México*, 53(supl. 2), s220-s232.
+    - **Por qué**: Comparación con otro sistema latinoamericano
+
+---
+
+## 🎯 BÚSQUEDAS RECOMENDADAS POR TEMA
+
+### Para Empezar una Lit Review en Health Economics
+
+#### **Búsqueda 1: Amplia (Overview)**
+```
+Database: PubMed
+String: ("health economics"[mesh] OR "cost-effectiveness"[tiab]) 
+        AND ("Colombia"[tiab] OR "Latin America"[tiab])
+        AND 2015:2025[dp]
+Objetivo: Ver panorama general, ~100-300 resultados
+```
+
+#### **Búsqueda 2: Específica (Tu Tema)**
+```
+Database: Scopus
+String: TITLE-ABS-KEY(("postpartum hemorrhage" OR "PPH") 
+        AND ("cost-effectiveness" OR "economic evaluation") 
+        AND ("active management" OR "oxytocin"))
+        AND PUBYEAR > 2014
+Objetivo: Papers directamente relevantes, ~20-50 resultados
+```
+
+#### **Búsqueda 3: Metodológica (Cómo lo hicieron)**
+```
+Database: Web of Science
+String: TS=("Markov model" OR "decision tree" OR "microsimulation") 
+        AND TS=("maternal health" OR "obstetric")
+        AND TS=("cost-effectiveness")
+Objetivo: Aprender metodologías, ~30-60 resultados
+```
+
+#### **Búsqueda 4: Grey Literature**
+```
+Database: Google Scholar
+String: "cost-effectiveness" "postpartum hemorrhage" 
+        "Colombia" OR "Latin America" 
+        -filetype:pdf (para excluir solo PDFs y encontrar páginas web)
+Objetivo: Working papers, tesis, reportes gubernamentales
+```
+
+---
+
+## 📋 CHECKLIST DE BÚSQUEDA SISTEMÁTICA
+
+Antes de empezar a escribir tu lit review, verifica:
+
+**Preparación**:
+- [ ] Pregunta PECO claramente definida
+- [ ] Criterios de inclusión/exclusión escritos
+- [ ] Mínimo 3 bases de datos identificadas
+- [ ] String de búsqueda piloteado (¿resultados razonables?)
+
+**Ejecución**:
+- [ ] Búsquedas documentadas con fechas
+- [ ] Resultados exportados a gestor de referencias
+- [ ] Duplicados removidos
+- [ ] Screening título/abstract completado
+- [ ] Full-text obtenidos para elegibles
+
+**Análisis**:
+- [ ] Datos extraídos en tabla estandarizada
+- [ ] Calidad de estudios evaluada (GRADE, risk of bias)
+- [ ] PRISMA diagram completado
+- [ ] Síntesis narrativa o meta-análisis (si aplica)
+
+**Reporte**:
+- [ ] Search strategy reportada en Methods
+- [ ] PRISMA checklist completado
+- [ ] Artículos clave (n=5-10) identificados para citar extensamente
+
+---
+
+## 🔗 RECURSOS ÚTILES
+
+### Tutoriales y Guías
+
+- **PRISMA Statement**: http://www.prisma-statement.org/
+- **Cochrane Handbook**: https://training.cochrane.org/handbook
+- **PubMed Tutorial**: https://pubmed.ncbi.nlm.nih.gov/help/
+- **Boolean Operators Guide**: https://libguides.mit.edu/c.php?g=175963&p=1158594
+
+### Tools Online
+
+- **MeSH Database**: https://www.ncbi.nlm.nih.gov/mesh
+- **PRISMA Flow Diagram Generator**: http://prisma.thetacollaborative.ca/
+- **Sample Size Calculator**: https://clincalc.com/stats/samplesize.aspx
+- **ICER Calculator**: (varios disponibles, buscar según modelo)
+
+### Journals Clave en Health Economics
+
+**Top Tier**:
+- *Health Economics* (Wiley)
+- *Journal of Health Economics* (Elsevier)
+- *Value in Health* (ISPOR)
+- *Medical Decision Making* (SMDM)
+
+**Regional**:
+- *Salud Pública de México*
+- *Revista Panamericana de Salud Pública*
+- *Cadernos de Saúde Pública* (Brasil)
+
+---
+
+## 🎯 PROMPT PARA ACTIVAR BÚSQUEDA
+
+Cuando necesites ayuda con búsqueda de literatura:
+
+```
+Ayúdame a diseñar una estrategia de búsqueda sistemática:
+
+TEMA: [tu pregunta de investigación]
+PECO:
+  P: [población]
+  E: [exposición/intervención]
+  C: [comparador]
+  O: [outcomes económicos]
+
+Necesito:
+1. String de búsqueda para PubMed y Scopus
+2. Criterios de inclusión/exclusión
+3. Recomendación de 3-5 artículos clave para empezar
+4. Estimado de resultados esperados
+```
+
+---
+
+**Versión**: 1.0  
+**Enfoque**: Health Economics en LMICs (especialmente Colombia/LATAM)  
+**Bases prioritarias**: PubMed, EconLit, Scopus  
+**Estándares**: PRISMA 2020, CHEERS 2022
