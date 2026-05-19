@@ -1322,77 +1322,167 @@ INCLUDED
 
 ---
 
-## 📖 ARTÍCULOS CLAVE RECOMENDADOS
+## 📖 RECOMENDACIÓN DINÁMICA DE ARTÍCULOS
 
-### Metodología de Health Economics
+### Cómo Solicitar Recomendaciones de Literatura
 
-#### **Fundacionales** (Leer primero):
+Cuando necesites artículos específicos para tu tema, usa este prompt:
 
-1. **Drummond, M. F., et al. (2015)**. *Methods for the Economic Evaluation of Health Care Programmes* (4th ed.). Oxford University Press.
-   - **Por qué**: Libro de texto estándar, define tipos de evaluación económica
+```
+Recomiéndame 5-7 artículos clave para mi lit review:
 
-2. **Husereau, D., et al. (2022)**. "Consolidated Health Economic Evaluation Reporting Standards 2022 (CHEERS 2022)." *Value in Health*, 25(1), 3-9.
-   - **Por qué**: Estándar de reporte que DEBES seguir
+TEMA: [tu pregunta de investigación específica]
+ENFOQUE: [metodológico / empírico / revisión]
+CONTEXTO: [país/región si es relevante]
+
+Necesito:
+1. Artículos fundacionales (2-3)
+2. Artículos metodológicos (1-2)
+3. Artículos empíricos recientes (2-3)
+4. Contexto local si aplica (1)
+
+Para cada artículo dame:
+- Cita completa (APA 7)
+- DOI o URL
+- Por qué es relevante para mi tema
+- Qué aprenderé de él
+```
+
+### Sistema de Búsqueda para Recomendaciones
+
+Claude usará **web_search** para encontrar artículos actuales y relevantes siguiendo esta estrategia:
+
+#### **Paso 1: Artículos Fundacionales**
+Busca en Google Scholar / PubMed:
+- Keywords: [tu tema] + "systematic review" + "meta-analysis"
+- Filtro: >500 citas, últimos 10 años
+- Objetivo: Papers que resumen el estado del arte
+
+**Ejemplo de búsqueda**:
+```
+"postpartum hemorrhage" "cost-effectiveness" "systematic review"
+```
+
+#### **Paso 2: Artículos Metodológicos**
+Busca en journals especializados:
+- *Value in Health*, *Health Economics*, *Medical Decision Making*
+- Keywords: [tu método] + "guidelines" + "best practices"
+- Enfoque: Cómo hacer el análisis correctamente
+
+**Ejemplo**:
+```
+"Markov model" "health economics" "tutorial"
+```
+
+#### **Paso 3: Artículos Empíricos Recientes**
+Busca aplicaciones concretas:
+- Filtro: Últimos 3-5 años
+- Keywords: [tu intervención] + [tu población] + "economic evaluation"
+- Objetivo: Ver cómo otros lo hicieron
+
+**Ejemplo**:
+```
+"active management" "postpartum hemorrhage" "ICER" 2020:2025
+```
+
+#### **Paso 4: Contexto Local**
+Si tu estudio es en Colombia/LATAM:
+- Keywords: [tu tema] + "Colombia" OR "Latin America" OR "LMIC"
+- Bases: LILACS, Scielo, Salud Pública de México
+- Objetivo: Datos transferibles a tu contexto
+
+**Ejemplo**:
+```
+"maternal health" "economic evaluation" "Colombia"
+```
+
+### Criterios de Selección de Artículos
+
+Claude priorizará artículos que cumplan:
+
+**Calidad**:
+- ✅ Publicados en journals peer-reviewed
+- ✅ >50 citas (para fundacionales) o muy recientes (<2 años)
+- ✅ Open access o con DOI accesible
+- ✅ Metodología clara y reproducible
+
+**Relevancia**:
+- ✅ Directamente relacionado con tu PECO
+- ✅ Misma metodología que planeas usar
+- ✅ Población o contexto similar
+- ✅ Reporta ICER o métricas económicas
+
+**Diversidad**:
+- ✅ Mix de reviews + estudios originales
+- ✅ Mix de high-income + LMIC contexts
+- ✅ Mix de metodologías (si aplica)
+
+### Template de Output de Recomendaciones
+
+Cuando pidas recomendaciones, Claude responderá así:
+
+```
+📚 ARTÍCULOS RECOMENDADOS PARA: [Tu tema]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📖 FUNDACIONALES (Leer primero)
+
+1. [Autor et al.] ([Año]). "[Título completo]." *Journal Name*, 
+   Vol(Issue), pages.
+   
+   🔗 DOI: https://doi.org/xxxxx
+   
+   ✅ Por qué es clave:
+   - [Razón específica 1]
+   - [Razón específica 2]
+   
+   💡 Qué aprenderás:
+   - [Insight 1]
+   - [Insight 2]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📐 METODOLÓGICOS (Cómo hacerlo)
+
+2. [...]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔬 EMPÍRICOS RECIENTES (Aplicaciones)
+
+3. [...]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🌎 CONTEXTO LOCAL (Colombia/LATAM)
+
+5. [...]
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PRÓXIMOS PASOS:
+1. Lee fundacionales primero (papers 1-2)
+2. Revisa metodológicos antes de diseñar tu estudio (paper 3)
+3. Analiza empíricos para extraer datos (papers 4-6)
+4. Contextualiza con literatura local (paper 7)
+```
+
+### Artículos Metodológicos Estándar (Siempre Relevantes)
+
+Estos 3 artículos SON universales para health economics y siempre deben recomendarse:
+
+1. **CHEERS 2022**: Husereau et al. (2022). "Consolidated Health Economic Evaluation Reporting Standards 2022." *Value in Health*, 25(1), 3-9. 
    - **DOI**: 10.1016/j.jval.2021.11.1351
+   - **Por qué**: Estándar de reporte obligatorio
 
-3. **Neumann, P. J., et al. (2016)**. *Cost-Effectiveness in Health and Medicine* (2nd ed.). Oxford University Press.
-   - **Por qué**: Panel de expertos en CE, guía de buenas prácticas
+2. **ISPOR Modeling Guidelines**: Caro et al. (2012). "Modeling good research practices." *Value in Health*, 15(6), 796-803.
+   - **DOI**: 10.1016/j.jval.2012.06.001
+   - **Por qué**: Best practices en modelado económico
 
-#### **Conceptos Específicos**:
-
-4. **Briggs, A. H., et al. (2012)**. "Model parameter estimation and uncertainty analysis: A report of the ISPOR-SMDM Modeling Good Research Practices Task Force." *Value in Health*, 15(6), 835-842.
-   - **Por qué**: Análisis de sensibilidad probabilístico
-   - **DOI**: 10.1016/j.jval.2012.04.014
-
-5. **Weinstein, M. C., et al. (2009)**. "QALYs: The basics." *Value in Health*, 12, S5-S9.
-   - **Por qué**: Explica QALYs de manera clara
-   - **DOI**: 10.1111/j.1524-4733.2009.00515.x
-
-6. **Sculpher, M. J., & Claxton, K. (2012)**. "Establishing the cost-effectiveness of new pharmaceuticals under conditions of uncertainty." *Nature Reviews Drug Discovery*, 11(10), 733-736.
-   - **Por qué**: Decisión bajo incertidumbre, thresholds
-   - **DOI**: 10.1038/nrd3863
-
-### Health Economics en LMICs (Low-Middle Income Countries)
-
-7. **Walker, D., & Fox-Rushby, J. A. (2000)**. "Economic evaluation of communicable disease interventions in developing countries: a critical review of the published literature." *Health Economics*, 9(8), 681-698.
-   - **Por qué**: Challenges específicos en países en desarrollo
-   - **DOI**: 10.1002/hec.541
-
-8. **Wilkinson, T., et al. (2016)**. "The International Decision Support Initiative Reference Case for Economic Evaluation: An Aid to Thought." *Value in Health*, 19(8), 921-928.
-   - **Por qué**: Adaptación de métodos para LMICs
-   - **DOI**: 10.1016/j.jval.2016.04.011
-
-### Health Systems & Financing
-
-9. **Savedoff, W. D., et al. (2012)**. "Political and economic aspects of the transition to universal health coverage." *The Lancet*, 380(9845), 924-932.
-   - **Por qué**: UHC en contexto político-económico
-   - **DOI**: 10.1016/S0140-6736(12)61083-6
-
-10. **Barros, P. P., et al. (2013)**. "Health system performance in OECD countries: A comparative analysis." *Health Economics*, 22(5), 499-503.
-    - **Por qué**: Comparaciones de sistemas de salud
-    - **DOI**: 10.1002/hec.2922
-
-### Equity in Health Economics
-
-11. **Cookson, R., et al. (2017)**. "Distributional Cost-Effectiveness Analysis: Quantifying Health Equity Impacts and Trade-Offs." *Medical Decision Making*, 37(7), 824-839.
-    - **Por qué**: Análisis de equidad, no solo eficiencia
-    - **DOI**: 10.1177/0272989X17706372
-
-12. **Asaria, M., et al. (2016)**. "Distributional cost-effectiveness analysis of health care programmes—a methodological case study." *Health Economics*, 25(5), 490-508.
-    - **Por qué**: Metodología práctica para análisis distributivo
-    - **DOI**: 10.1002/hec.3058
-
-### Colombia & Latin America Context
-
-13. **Guerrero, R., et al. (2011)**. "Sistema de salud de Colombia." *Salud Pública de México*, 53(supl. 2), s144-s155.
-    - **Por qué**: Descripción del SGSSS colombiano
-    - **Disponible**: Gratis online
-
-14. **Ocampo, F., et al. (2025)**. "Predicting patient no-shows in outpatient appointments using machine learning." [Tu paper]
-    - **Por qué**: Contexto colombiano, datos reales SGSSS
-
-15. **Gómez-Dantés, O., et al. (2011)**. "Sistema de salud de México." *Salud Pública de México*, 53(supl. 2), s220-s232.
-    - **Por qué**: Comparación con otro sistema latinoamericano
+3. **PRISMA 2020** (si es review): Page et al. (2021). "The PRISMA 2020 statement." *BMJ*, 372, n71.
+   - **DOI**: 10.1136/bmj.n71
+   - **Por qué**: Estándar para revisiones sistemáticas
 
 ---
 
