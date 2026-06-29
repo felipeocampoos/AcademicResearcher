@@ -8,91 +8,82 @@
 
 ### Paso 0: Configurar tu Proyecto en Claude.ai
 
-1. **Clona el repositorio en tu PC**:
+**1. Clona el repositorio en tu PC**:
 ```bash
 git clone https://github.com/felipeocampoos/AcademicResearcher.git
-cd AcademicResearcher
 ```
 
-2. **Crea carpeta para tu proyecto específico**:
-```bash
-mkdir mi-paper-hpp
-cd mi-paper-hpp
+**2. Ve a claude.ai y crea un Project**:
+- Click en "Projects" (menú izquierdo)
+- Click "Create Project"
+- Nombre: tu tema (ej: "HPP Cost-Effectiveness Colombia")
+
+**3. Sube los archivos al Project Knowledge**:
+- Click en "Add content" → "Upload files"
+- Sube estos 3 archivos obligatorios:
+
+```
+✅ claude.md                  ← Instrucciones base + router de skills
+✅ SKILL_opinion.md           ← Skill para columnas de opinión
+✅ SKILL_originalpaper.md     ← Skill para artículos científicos
 ```
 
-3. **Ir a claude.ai y crear un Project**:
-   - Ve a https://claude.ai
-   - Click en "Projects" (menú izquierdo)
-   - Click "Create Project"
-   - Nombre: "HPP Cost-Effectiveness Colombia" (o tu tema)
-
-4. **Agregar Knowledge al Project**:
-   - Click en "Add content" → "Upload files"
-   - Sube estos 4 archivos desde tu carpeta `AcademicResearcher/`:
-     
-     ✅ `claude.md` (instrucciones de economía de la salud)
-     ✅ Este archivo: `GUIA_PRACTICA_PASO_A_PASO.md`
-     ✅ `example_introduction_hpe.md` (opcional, como referencia)
-
-   - **NO necesitas subir las skills manualmente** — Claude.ai tiene acceso a las skills públicas automáticamente cuando las mencionas
-
-5. **¡Listo para empezar!** Ahora todos tus chats en este Project tendrán:
-   - Contexto de economía de la salud
-   - Acceso automático a las skills cuando las necesites
-   - Esta guía como referencia
+**4. ¡Listo!** Claude ahora tiene:
+- Contexto de economía de la salud
+- Sabe cuándo escribir para prensa vs para journal
+- Aplica el estilo correcto automáticamente
 
 ---
 
-## 🔧 ¿Cómo Funcionan las Skills en Claude.ai?
+## 🔧 ¿Cómo Sabe Claude Qué Skill Usar?
 
-**Las skills se activan automáticamente según el tipo de tarea:**
+El `claude.md` tiene un **router** que detecta automáticamente:
 
-| Paso | Skill Automática | Por qué se activa |
-|------|-----------------|-------------------|
-| 1-2 | `claude.md` | Pregunta de investigación, contexto salud |
-| 3 | `academic-researcher` | Análisis de papers |
-| 4-5 | `academic-researcher` + `claude.md` | Estructura lit review |
-| 6 | `research-paper-writer` | Outline detallado IMRAD |
-| 7-12 | `claude.md` + `research-paper-writer` | Drafting secciones |
-| 13 | `academic-paper-reviewer` | Peer review simulation |
-| 14-15 | `claude.md` | Revision coaching |
-| 16-17 | `claude.md` | CHEERS checklist, APA 7 |
+| Si pides... | Claude activa... |
+|------------|-----------------|
+| "Escribe una columna de opinión..." | `SKILL_opinion.md` |
+| "Escribe un editorial para El Tiempo..." | `SKILL_opinion.md` |
+| "Escribe la Introduction de mi paper..." | `SKILL_originalpaper.md` |
+| "Redacta los Methods para Lancet..." | `SKILL_originalpaper.md` |
+| "Escribe un artículo..." (ambiguo) | Claude pregunta primero |
 
-**NO necesitas mencionar las skills explícitamente** — Claude las detecta por contexto.
+**No necesitas mencionar las skills** — Claude las detecta por el tipo de petición.
 
 ---
 
-## 🚀 PASO A PASO (17 Pasos)
+## 📝 PARTE 1: ARTÍCULO CIENTÍFICO ORIGINAL
+
+*Usa `SKILL_originalpaper.md` — Para publicar en journals indexados*
 
 ---
 
-# PASO 1: Refina tu Pregunta de Investigación
+### PASO 1: Refina tu Pregunta de Investigación
 
-**🔧 Skill automática**: `claude.md` (contexto de economía de la salud)
+**🔧 Skill**: `claude.md` (contexto de economía de la salud)
 
 **Comando**:
 ```
 Tengo una idea de investigación en economía de la salud:
 
-IDEA: Evaluar costo-efectividad de manejo activo de hemorragia posparto en Colombia
+IDEA: [describe tu idea en 1-2 oraciones]
 
-Ayúdame a refinar esta idea cubriendo:
+Ayúdame a refinarla cubriendo:
 1. Carga de enfermedad
 2. Intervenciones existentes
 3. Contexto SGSSS
 4. Brecha de conocimiento
 5. Relevancia para política
 
-Dame pregunta de investigación clara + objetivos
+Dame pregunta de investigación clara + objetivos específicos
 ```
 
 **Guardar**: `01_research_question.md`
 
 ---
 
-# PASO 2: Analiza Papers Base
+### PASO 2: Analiza tus Papers Base
 
-**🔧 Skill automática**: `academic-researcher`
+**🔧 Skill**: `claude.md` (Academic Researcher framework)
 
 **Comando** (repetir para cada paper):
 ```
@@ -100,306 +91,512 @@ Analiza este paper [sube PDF o pega info]:
 
 Extrae:
 - Research question
-- Metodología
-- Findings (ICER, costos)
-- Implicaciones
+- Diseño metodológico
+- Findings principales (ICER, costos, efectividad)
+- Implicaciones para política
 - Limitaciones
-- Cita APA 7
+- Cita en APA 7
 ```
 
 **Guardar**: `02_papers_analysis.md`
 
 ---
 
-# PASO 3: Estructura Literatura Review
+### PASO 3: Busca Literatura Adicional
 
-**🔧 Skill automática**: `academic-researcher` + `claude.md`
+**🔧 Skill**: `claude.md` (Systematic Literature Search)
+
+**Comando**:
+```
+Diseña una estrategia de búsqueda para:
+
+TEMA: [tu pregunta de investigación]
+PECO:
+  P: [población]
+  E: [exposición/intervención]
+  C: [comparador]
+  O: [desenlaces económicos]
+
+Necesito:
+1. String de búsqueda para PubMed y Scopus
+2. Criterios de inclusión/exclusión
+3. Recomendación de 5 artículos clave
+```
+
+**Guardar**: `03_search_strategy.md`
+
+---
+
+### PASO 4: Estructura la Literatura Review
+
+**🔧 Skill**: `claude.md`
 
 **Comando**:
 ```
 Crea estructura de lit review para [tu pregunta]
 
-Papers base: [pega análisis del Paso 2]
+Papers analizados: [pega del Paso 2]
 
 Incluye:
-- Theoretical frameworks (CE, CU)
-- Thematic synthesis
-- Research gaps (Colombia-specific)
+- Theoretical frameworks (CE, CU, CBA)
+- Thematic synthesis (por temas, no cronológico)
+- Research gaps específicos para Colombia/LATAM
 - Vocabulario CHEERS 2022
 ```
 
-**Guardar**: `03_lit_review_outline.md`
+**Guardar**: `04_lit_review_outline.md`
 
 ---
 
-# PASO 4: Escribe Literatura Review
+### PASO 5: Escribe la Literatura Review
 
-**🔧 Skill automática**: `claude.md`
+**🔧 Skill**: `SKILL_originalpaper.md`
 
 **Comando**:
 ```
-Escribe lit review completa:
+Escribe la literatura review completa siguiendo SKILL_originalpaper:
 
-Outline: [del Paso 3]
+Outline: [del Paso 4]
 Papers: [del Paso 2]
+Pregunta: [del Paso 1]
 
 Requisitos:
-- Máx 3-4 oraciones/párrafo
-- Vocabulario económico
+- Escalera epistémica correcta (no conviertas asociación en causalidad)
+- Vocabulario económico consistente
 - APA 7
 - 1500-2000 palabras
+- Brecha de investigación clara al final
 ```
 
-**Guardar**: `04_literature_review.md`
+**Guardar**: `05_literature_review.md`
 
 ---
 
-# PASO 5: Outline Completo del Paper
+### PASO 6: Crea el Outline Completo
 
-**🔧 Skill automática**: `research-paper-writer`
+**🔧 Skill**: `SKILL_originalpaper.md`
 
 **Comando**:
 ```
-Crea outline detallado:
+Crea outline detallado para mi paper siguiendo SKILL_originalpaper:
 
 Pregunta: [del Paso 1]
-Journal: Health Economics
+Journal objetivo: [Health Economics / Lancet / Value in Health / etc.]
 Formato: IMRAD + CHEERS 2022
-Longitud: 6000 palabras
+Longitud: [6000 palabras o límite del journal]
 
 Incluye subsecciones numeradas para:
-- Abstract (250)
-- Introduction (800)
-- Methods (1500)
-- Results (1200)
-- Discussion (1200)
-- Conclusions (300)
+- Abstract (250 palabras)
+- Introduction (~800 palabras)
+- Methods (~1500 palabras)
+- Results (~1200 palabras)
+- Discussion (~1200 palabras)
+- Conclusions (~300 palabras)
+
+Para cada sección: indica qué datos necesito y qué estándares seguir
 ```
 
-**Guardar**: `05_paper_outline.md`
+**Guardar**: `06_paper_outline.md`
 
 ---
 
-# PASO 6: Introduction
+### PASO 7: Escribe la Introduction
 
-**🔧 Skill automática**: `claude.md`
+**🔧 Skill**: `SKILL_originalpaper.md`
 
 **Comando**:
 ```
-Escribe INTRODUCTION (4 párrafos):
+Escribe la INTRODUCTION siguiendo SKILL_originalpaper:
 
-Outline: [sección 1 del Paso 5]
-Lit review: [del Paso 4]
+Outline: [sección Introduction del Paso 6]
+Literatura: [del Paso 5]
+Pregunta: [del Paso 1]
 
-Párrafos:
-1. Carga HPP en Colombia
-2. Intervenciones + CE internacional
-3. Brecha Colombia-específica
-4. Objetivos
+Estructura (embudo de problema a contribución):
+1. Define el problema (enfermedad, política, mecanismo)
+2. Cuantifica la carga (clínica, económica, equidad)
+3. Mecanismo institucional que hace importante la pregunta
+4. Evidencia cercana + qué permanece desconocido
+5. Objetivo en una oración directa
+6. Contribución o novedad
 
+Tono: formal, analítico, no promocional
 ~800 palabras, APA 7
 ```
 
-**Guardar**: `06_introduction.md`
+**Guardar**: `07_introduction.md`
 
 ---
 
-# PASO 7: Methods
+### PASO 8: Escribe los Methods
 
-**🔧 Skill automática**: `research-paper-writer` + `claude.md`
+**🔧 Skill**: `SKILL_originalpaper.md`
 
 **Comando**:
 ```
-Escribe METHODS siguiendo CHEERS 2022:
+Escribe la sección METHODS siguiendo SKILL_originalpaper:
 
-Outline: [sección 2 del Paso 5]
+Outline: [sección Methods del Paso 6]
+Tipo de análisis: [CEA / CUA / cuasi-experimental / descriptivo]
 
-Incluye:
-- Study design (CEA)
-- Perspective (SGSSS)
-- Model structure
-- Data sources
-- Discount rate
-- Sensitivity analysis
-- Equity subgroups
+Incluye en este orden:
+1. Diseño y perspectiva analítica
+2. Escenario y contexto institucional (SGSSS)
+3. Período y fuentes de datos
+4. Población y criterios de elegibilidad
+5. Definición de intervenciones comparadas
+6. Desenlaces y medición
+7. Análisis principal (modelo económico)
+8. Análisis de sensibilidad
+9. Análisis de equidad (subgrupos)
 
-~1500 palabras, reproducible
+CHEERS 2022 compliant, reproducible
+~1500 palabras
 ```
 
-**Guardar**: `07_methods.md`
+**Guardar**: `08_methods.md`
 
 ---
 
-# PASO 8-10: Results, Discussion, Conclusions
+### PASO 9: Escribe los Results
 
-**🔧 Skill automática**: `claude.md`
-
-**Comando similar al anterior** para cada sección, siguiendo el outline.
-
-**Guardar**: 
-- `08_results.md`
-- `09_discussion.md`
-- `10_conclusions.md`
-
----
-
-# PASO 11: Abstract
-
-**🔧 Skill automática**: `claude.md`
+**🔧 Skill**: `SKILL_originalpaper.md`
 
 **Comando**:
 ```
-Escribe ABSTRACT (250 palabras):
+Escribe la sección RESULTS siguiendo SKILL_originalpaper:
 
-Secciones: [del Paso 6-10]
+Outline: [sección Results del Paso 6]
+Mis datos: [pega tus resultados o datos disponibles]
 
-Estructura:
-- Background (50)
-- Methods (70)
-- Results (80)
-- Conclusions (50)
-
-Sin citas, auto-contenido
+Patrón por párrafo: hallazgo → comparación → explicación → implicación
+Tono: neutral, reportar sin interpretar aún
+Incluye: estimados centrales + intervalos de confianza
+~1200 palabras
 ```
 
-**Guardar**: `11_abstract.md`
+**Guardar**: `09_results.md`
 
 ---
 
-# PASO 12: Manuscrito Completo
+### PASO 10: Escribe la Discussion
 
-**🔧 Skill automática**: `claude.md`
+**🔧 Skill**: `SKILL_originalpaper.md`
 
 **Comando**:
 ```
-Combina todas las secciones en manuscrito:
+Escribe la DISCUSSION siguiendo SKILL_originalpaper:
 
-Abstract: [Paso 11]
-Introduction: [Paso 6]
-Methods: [Paso 7]
-Results: [Paso 8]
-Discussion: [Paso 9]
-Conclusions: [Paso 10]
+Results: [resumen del Paso 9]
+Literatura: [papers base del Paso 2]
 
-Formato Markdown, transiciones suaves
+Subsecciones:
+1. Hallazgos principales vs literatura (sin repetir resultados)
+2. Implicaciones para política (actor + mecanismo específico)
+3. Equidad (¿quién se beneficia/excluye?)
+4. Limitaciones (honestas y técnicamente específicas)
+5. Investigación futura
+
+Lenguaje causal: ajustado al diseño del estudio
+~1200 palabras
 ```
 
-**Guardar**: `12_manuscript_complete.md`
+**Guardar**: `10_discussion.md`
 
 ---
 
-# PASO 13: Peer Review Simulado
+### PASO 11: Escribe las Conclusions
 
-**🔧 Skill automática**: `academic-paper-reviewer`
+**🔧 Skill**: `SKILL_originalpaper.md`
 
 **Comando**:
 ```
-Simula peer review:
+Escribe las CONCLUSIONS siguiendo SKILL_originalpaper:
 
-Manuscript: [del Paso 12]
-Journal: Health Economics
+Hallazgos: [del Paso 9]
+Implicaciones: [del Paso 10]
+
+Requisitos:
+- 1-2 párrafos compactos
+- Reitera respuesta central + magnitud
+- Implicación para sistema de salud
+- Nombra actor responsable o mecanismo
+- Recomendación proporcionada (NO slogan)
+- Sin nueva evidencia ni afirmaciones amplias
+~300 palabras
+```
+
+**Guardar**: `11_conclusions.md`
+
+---
+
+### PASO 12: Escribe el Abstract
+
+**🔧 Skill**: `SKILL_originalpaper.md`
+
+**Comando**:
+```
+Escribe el ABSTRACT siguiendo SKILL_originalpaper:
+
+Secciones completas: [Pasos 7-11]
+Journal: [nombre del journal]
+
+Estructura (250 palabras máximo):
+- Background/problema: 1-2 oraciones
+- Objetivo: 1 oración explícita
+- Methods: diseño, escenario, población, datos, método
+- Results: muestra, estimados centrales, incertidumbre
+- Conclusion: respuesta directa + implicación acotada
+
+Sin literatura de antecedentes salvo que sea esencial
+Reporta magnitudes reales, no solo "significativo" o "sustancial"
+```
+
+**Guardar**: `12_abstract.md`
+
+---
+
+### PASO 13: Manuscrito Completo
+
+**🔧 Skill**: `claude.md`
+
+**Comando**:
+```
+Combina todas las secciones en manuscrito completo:
+
+Abstract: [Paso 12]
+Introduction: [Paso 7]
+Methods: [Paso 8]
+Results: [Paso 9]
+Discussion: [Paso 10]
+Conclusions: [Paso 11]
+
+Formato Markdown
+Verifica: transiciones suaves, acrónimos consistentes, tono uniforme
+```
+
+**Guardar**: `13_manuscript_complete.md`
+
+---
+
+### PASO 14: Peer Review Simulado
+
+**🔧 Skill**: `claude.md` (Academic Paper Reviewer framework)
+
+**Comando**:
+```
+Simula peer review completo:
+
+Manuscript: [del Paso 13]
+Journal: [tu journal objetivo]
 
 5 revisores:
 1. Methodology Specialist
 2. Health Economics Expert
-3. Public Health (cross-disciplinary)
+3. Public Health / Cross-disciplinary
 4. Devil's Advocate
-5. Editor-in-Chief
+5. Editor-in-Chief (decisión final)
 
-Decisión final + revisiones requeridas
+Output: fortalezas, debilidades, revisiones REQUERIDAS vs opcionales
 ```
 
-**Guardar**: `13_peer_reviews.md`
+**Guardar**: `14_peer_reviews.md`
 
 ---
 
-# PASO 14: Roadmap de Revisión
+### PASO 15: Aplica Revisiones
 
-**🔧 Skill automática**: `claude.md`
+**🔧 Skill**: `SKILL_originalpaper.md`
 
 **Comando**:
 ```
-Crea revision roadmap:
+Crea roadmap de revisión y aplica cambios:
 
-Manuscript: [Paso 12]
-Reviews: [Paso 13]
+Manuscript: [Paso 13]
+Reviews: [Paso 14]
 
 Para cada revisión REQUERIDA:
-- Ubicación (sección, línea)
+- Ubicación exacta (sección + párrafo)
 - Texto actual
 - Texto revisado
-- Justificación
-```
+- Justificación del cambio
 
-**Guardar**: `14_revision_roadmap.md`
-
----
-
-# PASO 15: Manuscrito Final
-
-**🔧 Skill automática**: `claude.md`
-
-**Comando**:
-```
-Aplica revisiones y genera:
-
-Original: [Paso 12]
-Roadmap: [Paso 14]
-
-Output:
-- Manuscript revisado
-- Track changes
-- Response to reviewers
+Genera también: Response to Reviewers
 ```
 
 **Guardar**: `15_manuscript_FINAL.md`
 
 ---
 
-# PASO 16: CHEERS 2022 Checklist
+### PASO 16: CHEERS 2022 Checklist
 
-**🔧 Skill automática**: `claude.md`
+**🔧 Skill**: `claude.md`
 
 **Comando**:
 ```
-Valida CHEERS 2022:
+Valida CHEERS 2022 completo:
 
 Manuscript: [Paso 15]
 
-Checklist de 28 items:
-- Item, recommendation, ubicación, status
-- % compliance
-- Acciones faltantes
+Para cada uno de los 28 items:
+- Número y recomendación
+- Ubicación en mi manuscrito
+- Status: ✓ Compliant / ✗ Missing / ⚠ Partial
+- Si falta: qué agregar
+
+% de compliance + acciones para llegar al 100%
 ```
 
 **Guardar**: `16_CHEERS_checklist.md`
 
 ---
 
-# PASO 17: Referencias APA 7
+### PASO 17: Referencias APA 7
 
-**🔧 Skill automática**: `claude.md`
+**🔧 Skill**: `claude.md`
 
 **Comando**:
 ```
-Valida y formatea referencias APA 7:
+Valida y formatea todas las referencias en APA 7:
 
 Manuscript: [Paso 15]
 
-- Lista completa ordenada
-- Verificar in-text vs lista
-- DOIs correctos
-- Formato consistente
+- Lista completa ordenada alfabéticamente
+- Verifica coherencia in-text vs lista
+- DOIs correctos y accesibles
+- Formato consistente por tipo (journal, libro, reporte)
 ```
 
 **Guardar**: `17_references_APA7.md`
 
 ---
 
-# ✅ CHECKLIST FINAL
+## 📰 PARTE 2: COLUMNA DE OPINIÓN PÚBLICA
 
-Antes de enviar al journal:
+*Usa `SKILL_opinion.md` — Para publicar en prensa, medios o blogs*
 
+---
+
+### PASO A: Define el Tema y el Gancho
+
+**🔧 Skill**: `SKILL_opinion.md`
+
+**Comando**:
+```
+Quiero escribir una columna de opinión sobre [tema].
+
+DATO MOTIVADOR: [hecho reciente, cifra o evento que motiva escribirla]
+TESIS: [qué quieres defender, aunque sea preliminar]
+AUDIENCIA: [periódico, medio o blog objetivo]
+
+¿Con cuál de estos patrones encaja mejor mi tema?
+A) Medida popular, efecto indeseado
+B) Dato técnico, impacto ciudadano
+C) Concepto abusado
+D) Referente internacional
+
+Dame una propuesta de estructura antes de escribir.
+```
+
+---
+
+### PASO B: Escribe la Columna
+
+**🔧 Skill**: `SKILL_opinion.md`
+
+**Comando**:
+```
+Escribe la columna de opinión siguiendo SKILL_opinion:
+
+TEMA: [tu tema]
+PATRÓN: [A / B / C / D]
+DATO MOTIVADOR: [hecho/cifra de apertura]
+TESIS: [lo que quieres defender]
+
+Requisitos:
+- Título: 2-6 palabras
+- 400-500 palabras
+- Apertura con hecho concreto (no abstracción)
+- Tesis antes del párrafo 3
+- Mínimo 1 dato específico con fuente
+- Cierre con juicio claro (no pregunta abierta)
+- Tono sobrio, argumentativo, no panfletario
+```
+
+---
+
+### PASO C: Revisa con Checklist
+
+**🔧 Skill**: `SKILL_opinion.md`
+
+**Comando**:
+```
+Revisa esta columna con el checklist de SKILL_opinion:
+
+COLUMNA: [pega el texto]
+
+Verifica:
+- ¿Abre con hecho concreto?
+- ¿Tesis antes del párrafo 3?
+- ¿Hay al menos 1 dato con fuente?
+- ¿Explica implicación no obvia?
+- ¿Tiene matiz o concesión?
+- ¿Cierra con juicio claro?
+- ¿Entre 400-500 palabras?
+- ¿No copia frases de textos de referencia?
+
+Dame el texto corregido si hay problemas.
+```
+
+---
+
+## 📊 RESUMEN: Qué Skill Usar en Cada Paso
+
+### Para Artículo Científico:
+
+| Paso | Tarea | Skill |
+|------|-------|-------|
+| 1 | Refinar pregunta | `claude.md` |
+| 2 | Analizar papers | `claude.md` |
+| 3 | Buscar literatura | `claude.md` |
+| 4 | Estructurar lit review | `claude.md` |
+| 5 | Escribir lit review | `SKILL_originalpaper.md` |
+| 6 | Outline completo | `SKILL_originalpaper.md` |
+| 7-11 | Drafting secciones | `SKILL_originalpaper.md` |
+| 12 | Abstract | `SKILL_originalpaper.md` |
+| 13 | Manuscrito completo | `claude.md` |
+| 14 | Peer review | `claude.md` |
+| 15 | Revisiones | `SKILL_originalpaper.md` |
+| 16 | CHEERS checklist | `claude.md` |
+| 17 | Referencias APA 7 | `claude.md` |
+
+### Para Columna de Opinión:
+
+| Paso | Tarea | Skill |
+|------|-------|-------|
+| A | Definir tema y patrón | `SKILL_opinion.md` |
+| B | Escribir columna | `SKILL_opinion.md` |
+| C | Revisar con checklist | `SKILL_opinion.md` |
+
+---
+
+## ⏱️ TIEMPO ESTIMADO
+
+### Artículo Científico:
+- Pasos 1-4 (Preparación): 2-3 horas
+- Pasos 5-12 (Drafting): 4-6 horas
+- Pasos 13-15 (Review + Revisión): 2-3 horas
+- Pasos 16-17 (Validación): 1 hora
+- **TOTAL: 10-14 horas** (vs 3-6 meses tradicional)
+
+### Columna de Opinión:
+- Pasos A-C: **30-60 minutos**
+
+---
+
+## ✅ CHECKLIST FINAL
+
+### Artículo Científico:
 - [ ] Manuscript completo (~6000 palabras)
 - [ ] Abstract ≤ 250 palabras
 - [ ] CHEERS 2022: 28/28 items ✓
@@ -407,51 +604,37 @@ Antes de enviar al journal:
 - [ ] Peer review simulado completado
 - [ ] Revisiones aplicadas
 - [ ] Response to reviewers preparada
-- [ ] Limitaciones honestas incluidas
-- [ ] Recomendaciones calificadas (no absolutas)
+- [ ] Verbos causales ajustados al diseño
+- [ ] Limitaciones honestas y específicas
+- [ ] Recomendaciones con actor + mecanismo nombrado
+
+### Columna de Opinión:
+- [ ] Título 2-6 palabras
+- [ ] Apertura con hecho concreto
+- [ ] Tesis antes del párrafo 3
+- [ ] Mínimo 1 dato con fuente
+- [ ] Implicación no obvia explicada
+- [ ] Cierre con juicio claro
+- [ ] 400-500 palabras
 
 ---
 
-# 📊 RESUMEN: Comandos Clave
+## 💡 TIPS
 
-| Paso | Comando | Skill |
-|------|---------|-------|
-| 1 | "Ayúdame a refinar esta idea..." | claude.md |
-| 2 | "Analiza este paper..." | academic-researcher |
-| 3-4 | "Crea/escribe lit review..." | academic-researcher + claude.md |
-| 5 | "Crea outline detallado..." | research-paper-writer |
-| 6-12 | "Escribe [sección]..." | claude.md |
-| 13 | "Simula peer review..." | academic-paper-reviewer |
-| 14-17 | "Aplica revisiones/valida..." | claude.md |
+✅ Sube los 3 archivos al Project Knowledge antes de empezar
+✅ Claude detecta automáticamente qué skill usar
+✅ Guarda cada output en archivo separado
+✅ Revisa cada sección manualmente antes de continuar
+✅ No saltes el peer review (Paso 14)
 
----
-
-# ⏱️ TIEMPO ESTIMADO
-
-- Pasos 1-5 (Preparación): 2-3 horas
-- Pasos 6-12 (Drafting): 4-6 horas
-- Pasos 13-15 (Review): 2-3 horas
-- Pasos 16-17 (Validación): 1 hora
-
-**TOTAL: 10-14 horas** (vs 3-6 meses tradicional)
+❌ No subas solo `claude.md` — necesitas los 3 archivos
+❌ No copies texto exacto de papers
+❌ No conviertas asociación en causalidad en el paper
+❌ No envíes sin completar CHEERS checklist
 
 ---
 
-# 💡 TIPS
-
-✅ Trabaja en un solo Project de Claude.ai  
-✅ Guarda cada output en archivos separados  
-✅ Revisa manualmente cada sección antes de continuar  
-✅ No saltes el peer review (Paso 13)  
-✅ Sé honesto con limitaciones  
-
-❌ No copies texto exacto de papers  
-❌ No ignores feedback del peer review  
-❌ No sobre-vendas conclusiones  
-❌ No envíes sin completar CHEERS checklist  
-
----
-
-**Versión**: 2.0  
-**Para**: Claude.ai Projects  
-**Audiencia**: Investigadores economía de la salud
+**Versión**: 3.0
+**Para**: Claude.ai Projects
+**Audiencia**: Investigadores en economía de la salud
+**Archivos requeridos**: `claude.md` + `SKILL_opinion.md` + `SKILL_originalpaper.md`
